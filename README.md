@@ -8,9 +8,12 @@
 
 ## Features
 
-- [x] Clock
-- [x] Todo List
-- [x] Weather
-- [x] Random Quote
-- [x] Random Photo
-- [x] Offline Support
+`🟢 completed` `🟡 in progress` `🔘 not done`
+
+- 🟢 Clock
+- 🟢 Todo List
+- 🟡 Weather
+- 🟢 Random Quote
+- 🟡 Random Photo
+- 🟢 Offline Support
+- 🔘 Viewpage
