@@ -8,7 +8,7 @@
 
 ## Features
 
-`🟢 completed` `🟡 in progress` `🔘 not done`
+`🟢 completed` `🟡 in progress` `⚪ not done`
 
 - 🟢 Clock
 - 🟢 Todo List
@@ -16,4 +16,4 @@
 - 🟢 Random Quote
 - 🟡 Random Photo
 - 🟢 Offline Support
-- 🔘 Viewpage
+- ⚪ Viewpage
