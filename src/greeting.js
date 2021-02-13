@@ -1,3 +1,5 @@
+'use strict';
+
 const title=document.querySelector('.js-title');
 const form=document.querySelector('.js-form');
 const input=document.querySelector('.js-input');
@@ -15,11 +17,11 @@ function greetings(user){
   form.classList.remove(SHOW_CLASSNAME);
   title.classList.add(SHOW_CLASSNAME);
   if(whatTime<11){
-    title.innerHTML=`Good Morning, ${user}`;
+    title.innerHTML=`Good Morning, ${user}.`;
   }else if(whatTime<16){
-    title.innerHTML=`Good afternoon, ${user}`;
+    title.innerHTML=`Good afternoon, ${user}.`;
   }else{
-    title.innerHTML=`Good evening, ${user}`;
+    title.innerHTML=`Good evening, ${user}.`;
   }
 }
 

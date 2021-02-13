@@ -4,6 +4,14 @@ body{
   color: white;
 }
 
+ul {
+  list-style-type: none;
+}
+
+button {
+  margin: 2px;
+}
+
 input{
   outline: none;
   border: none;
@@ -11,6 +19,10 @@ input{
   border-bottom: 1px solid white;
   padding: 3px;
   color: white;
+}
+
+.clock{
+  font-size: 80px;
 }
 
 .form, .title{

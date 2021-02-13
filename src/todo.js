@@ -1,6 +1,4 @@
-// 일단은 기능은 된다.
-// 그런데 local storage에 저장한 값을 콘솔에 찍을때 보면 
-// 불필요한 공백이 자꾸 생기는데 어떻게 고치는지 모르겠네
+'use strict';
 
 const todoForm=document.querySelector('.js-todoForm');
 const todoInput=document.querySelector('.js-todo');
@@ -42,17 +40,25 @@ function showFinished(text){
   const span=document.createElement('span');
   const newId=done.length+1;
 
-  btnDel.innerHTML='❌';
+  btnDel.innerHTML='Delete';
+  btnDel.classList.add('btn');
+  btnDel.classList.add('btn-sm');
+  btnDel.classList.add('btn-danger');
   btnDel.addEventListener("click", deleteFinished);
-  btnPending.innerHTML='🔙'
+  btnPending.innerHTML='Back'
+  btnPending.classList.add('btn');
+  btnPending.classList.add('btn-sm');
+  btnPending.classList.add('btn-secondary');
+  btnPending.style.marginRight = "10px";
   btnPending.addEventListener('click', toPending);
-  span.innerHTML=' '+text;
+  span.innerHTML = text;
 
   li.id=newId;
   li.appendChild(btnDel);
   li.appendChild(btnPending);
   li.appendChild(span);
   finished.appendChild(li);
+  
 
   const doneObj={
     text: text,
@@ -90,9 +96,16 @@ function showPending(text){
   const span=document.createElement('span');
   const newId=todos.length+1; //li에 추가할 id값 자동으로 1씩 증가
 
-  btnDel.innerHTML='❌';
+  btnDel.innerHTML='Delete';
+  btnDel.classList.add('btn');
+  btnDel.classList.add('btn-sm');
+  btnDel.classList.add('btn-danger');
   btnDel.addEventListener("click", deletePending);
-  btnFinished.innerHTML='✅';
+  btnFinished.innerHTML='Done';
+  btnFinished.classList.add('btn');
+  btnFinished.classList.add('btn-sm');
+  btnFinished.classList.add('btn-primary');
+  btnFinished.style.marginRight = "10px";
   btnFinished.addEventListener("click", toFinished);
   span.innerHTML=text;
 

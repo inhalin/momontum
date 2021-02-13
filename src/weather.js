@@ -1,11 +1,14 @@
+'use strict';
+
+import API_KEY from './key.js';
+
 const weather=document.querySelector('.js-weather');
 const icon=document.querySelector('.js-icon');
-const API_KEY='9ef06ea04033b91f135ad3ca41f1ce76';
 const COORDS='coords';
 
 function getWeather(lat, lon){
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   ).then(function(response){
     return response.json();
   }).then(function(json){
