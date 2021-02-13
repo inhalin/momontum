@@ -12,8 +12,8 @@
 
 - 🟢 Clock
 - 🟢 Todo List
-- 🟡 Weather
+- 🟢 Weather
 - 🟢 Random Quote
 - 🟡 Random Photo
 - 🟢 Offline Support
-- ⚪ Viewpage
+- 🟡 Viewpage
