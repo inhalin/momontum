@@ -1,6 +1,6 @@
 # Momontum 
 
-### [`Momontum 바로가기`](https://inhalin.github.io/momontum/momontum.html)
+### [`Momontum 바로가기`](https://inhalin.github.io/momontum/)
 
 ![momontum](img/momontum.png)
 
