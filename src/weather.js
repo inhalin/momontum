@@ -1,10 +1,9 @@
 'use strict';
 
-import API_KEY from './key.js';
-
 const weather=document.querySelector('.js-weather');
 const icon=document.querySelector('.js-icon');
 const COORDS='coords';
+const API_KEY = '9ef06ea04033b91f135ad3ca41f1ce76'
 
 function getWeather(lat, lon){
   fetch(
